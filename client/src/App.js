@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar";
@@ -25,3 +26,9 @@ class App extends React.Component {
 }
 
 export default App;
+=======
+import React from "react";
+//use some other stuff too
+
+export default
+>>>>>>> master
