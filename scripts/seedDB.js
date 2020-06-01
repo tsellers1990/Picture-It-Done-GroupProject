@@ -13,9 +13,9 @@ const jobSeed = [
         description: "Just trying to lay some pipe(s)",
         date: new Date(Date.now())
     }
-]
+];
 
-db.jobSeed
+db.Job
     .remove({})
     .then(() => db.Job.collection.insertMany(jobSeed))
     .then(data => {
