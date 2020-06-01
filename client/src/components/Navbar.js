@@ -19,8 +19,11 @@ const Navbar = (props) => {
         <li><Link to={"/home"}>Home</Link></li>
         <li><Link to={"/ViewJobs"}>View Jobs</Link></li>
         <li><Link to={"/AddJob"}>Add a Job</Link></li>
-        <button class="btn waves-effect waves-light" type="submit" id="loginBtn" name="action">Login<i class="material-icons">send</i>
+        {!isAuthenticated && (
+        <button class="btn waves-effect waves-light" type="submit" id="loginBtn" name="action"onClick={() => loginWithRedirect({})}>Log in<i class="material-icons">send</i>
         </button>
+        )}
+        {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
       </ul>
     </div>
   </nav>
