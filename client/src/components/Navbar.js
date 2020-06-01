@@ -1,11 +1,14 @@
 import React from "react";
+import { useAuth0 } from "../react-auth0-spa";
 import "./Navbar.css";
 
 
 const Navbar = (props) => {
-    return (
-<>
-<nav>
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  
+  return (
+  <>
+  <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Picture It Done</a>
       <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
