@@ -11,6 +11,13 @@ import AddJobs from './pages/AddJob/AddJob';
 class App extends React.Component {
   state={name: "Picture It Done",
   }
+//  componentDidMount() {
+//    document.addEventListener('DOMContentLoaded', function() {
+//      var elems = document.querySelectorAll('.sidenav');
+//      var instances = M.Sidenav.init(elems, options);
+//    });
+
+//  }
 
   render(){
     return (
