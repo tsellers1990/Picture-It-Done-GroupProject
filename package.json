@@ -28,6 +28,7 @@
     "mongoose": "^5.3.16",
     "prop-types": "^15.7.2",
     "react-materialize": "^3.9.2",
-    "react-router": "^5.2.0"
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   }
 }
