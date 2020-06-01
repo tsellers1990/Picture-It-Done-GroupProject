@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    padding: auto;
+}
