@@ -18,6 +18,7 @@ const jobSeed = [
       user: "Guy with a 350z",
       description: "If it's louder, it's faster.",
       date: new Date(Date.now())
+
     },
     {
       title: "I need someone to build a website for connecting homeowners to contractors",
