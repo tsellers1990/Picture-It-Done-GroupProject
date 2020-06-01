@@ -23,7 +23,11 @@
     "axios": "^0.18.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+<<<<<<< HEAD
     "materialize-css": "^1.0.0",
+=======
+    "materialize-css": "^1.0.0-rc.2",
+>>>>>>> f6ab9e09b2c92e28338cca2df510885f0347fc3d
     "mongoose": "^5.3.16",
     "prop-types": "^15.7.2",
     "react-materialize": "^3.9.2",
