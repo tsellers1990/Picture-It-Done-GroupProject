@@ -10,6 +10,7 @@ const Navbar = (props) => {
 <>
 <nav>
     <div class="nav-wrapper">
+      
       <a href="#!" class="brand-logo">Picture It Done</a>
       <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down" id="menuList">
