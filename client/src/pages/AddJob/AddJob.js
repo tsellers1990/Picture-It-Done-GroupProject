@@ -52,6 +52,6 @@ const AddJobs = () => {
     </div>
   );
     
-  }
+}
 
 export default AddJobs;
