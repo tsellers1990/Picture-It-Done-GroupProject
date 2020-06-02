@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import "./Navbar.css";
 import {Link} from "react-router-dom";
+import M from  'materialize-css/dist/js/materialize.min.js';
 
 
 const Navbar = (props) => {
+  useEffect(() => {
+    let sidenav = document.querySelector('#slide-out');
+    M.Sidenav.init(sidenav, {});
+}, []);
+
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
   
   return (
@@ -29,6 +35,14 @@ const Navbar = (props) => {
       </ul>
     </div>
   </nav>
+  <div className="sideContainer">
+    <ul id="slide-out" class="sidenav">
+      <li><Link to={"/home"} id="sideLinks" onClick="">Home</Link></li>
+      <li><Link to={"/ViewJobs"} id="sideLinks">View Jobs</Link></li>
+      <li><Link to={"/AddJob"} id="sideLinks">Add Job</Link></li>
+    </ul>
+
+  </div>
 </>
     )
 }

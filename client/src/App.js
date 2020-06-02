@@ -9,6 +9,7 @@ import FunPage from './pages/FunPage/FunPage';
 
 import AddJobs from './pages/AddJob/AddJob';
 import { useAuth0 } from "./react-auth0-spa";
+import 'materialize-css/dist/css/materialize.min.css';
 
 
 function App() {
