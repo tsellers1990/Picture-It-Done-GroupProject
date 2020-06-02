@@ -19,6 +19,8 @@ const Navbar = (props) => {
         <li><Link to={"/home"}>Home</Link></li>
         <li><Link to={"/ViewJobs"}>View Jobs</Link></li>
         <li><Link to={"/AddJob"}>Add a Job</Link></li>
+        <li><Link to={"/FunPage"}>FunPage</Link></li>
+
         {!isAuthenticated && (
         <button class="btn waves-effect waves-light" type="submit" id="loginBtn" name="action"onClick={() => loginWithRedirect({})}>Log in<i class="material-icons">send</i>
         </button>

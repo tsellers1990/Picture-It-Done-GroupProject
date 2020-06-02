@@ -4,9 +4,12 @@ import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
-import ViewJobs from './pages/ViewJobs/ViewJobs';
+//import ViewJobs from './pages/ViewJobs/ViewJobs';
+import FunPage from './pages/FunPage/FunPage';
+
 import AddJobs from './pages/AddJob/AddJob';
 import { useAuth0 } from "./react-auth0-spa";
+
 
 function App() {
   const { loading } = useAuth0();
@@ -20,8 +23,10 @@ function App() {
       <Switch>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/Contact" component={Contact}/>
-        <Route exact path="/ViewJobs" component={ViewJobs}/>
+        {/* //<Route exact path="/ViewJobs" component={ViewJobs}/> */}
         <Route exact path="/AddJob" component={AddJobs}/>
+        <Route exact path="/FunPage" component={FunPage}/>
+
       </Switch>
     </Router>
   );
