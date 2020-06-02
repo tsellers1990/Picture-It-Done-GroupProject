@@ -2,6 +2,7 @@ import React from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import "./Navbar.css";
 import {Link} from "react-router-dom";
+import logo from "../PID-Logo5.png";
 
 
 const Navbar = (props) => {
@@ -11,6 +12,7 @@ const Navbar = (props) => {
   <>
   <nav>
     <div className="nav-wrapper">
+      <img className="pidLogo" src={logo} alt="Logo" />
       <a href="#!" className="brand-logo">Picture It Done</a>
       <ul className="right hide-on-med-and-down" id="menuList">
         <li><Link to={"/home"} id="linkTags">Home</Link></li>

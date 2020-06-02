@@ -10,9 +10,15 @@ nav {
     height: 130px;
 
 }
+
+.pidLogo {
+    height: auto;
+    width: auto;
+    margin-top: 0px;
+}
 nav .brand-logo {
     font-size: 55px;
-    padding-left: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
  #linkTags {
      font-size: 25px;
