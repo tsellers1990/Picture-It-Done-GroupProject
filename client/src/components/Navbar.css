@@ -12,9 +12,14 @@ nav {
 
 }
 
-nav .brand-logo {
+nav.brand-logo {
     font-size: 55px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pidLogo {
+    position: relative !important;
+    top: -120px !important;
 }
 
 #slide-out {

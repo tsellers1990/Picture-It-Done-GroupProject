@@ -5,6 +5,6 @@ h1 {
 #container {
     text-align: center;
     width: 75%;
-    margin: auto;
-    padding: auto;
+    /* margin: auto;
+    padding: auto; */
 }
