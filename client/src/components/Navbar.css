@@ -1,11 +1,13 @@
 .nav-wrapper {
-    background-color: teal;
+    background-color: rgb(4, 163, 168);
     /* text-align: left; */
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 35px;
     
 }
+
+
 
 nav {
     height: 130px !important;
@@ -28,11 +30,12 @@ nav .brand-logo {
 
  #linkTags {
      font-size: 25px;
+     background-color: rgb(4, 163, 168);
  }
 
  #linkTags:hover {
-     font-size: 30px;
-     color: rgb(0, 255, 255);
+     font-size: 27px;
+     color: rgb(190, 255, 255);
  }
 
  #sideLinks {
