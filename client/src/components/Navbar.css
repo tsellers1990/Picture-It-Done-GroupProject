@@ -50,10 +50,11 @@ nav .brand-logo {
  }
 
 #loginBtn {
-    height: 35px;
+    height: 40px;
     background-color: rgb(16, 219, 219);
     color: black;
     font-size: 18px;
+    padding-top: 5px;
 }
 
 #loginBtn:hover {
