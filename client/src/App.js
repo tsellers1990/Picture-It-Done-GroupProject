@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Redirect } from 'react';
 import './App.css';
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
@@ -20,13 +20,13 @@ function App() {
   return (
     <Router>
       <Navbar name={"Picture It Done"}/>
-      <Switch>
+      <Switch>  
+        <Route exact path="/" component={Home}/>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/Contact" component={Contact}/>
         <Route exact path="/ViewJobs" component={ViewJobs}/>
         <Route exact path="/AddJob" component={AddJobs}/>
         <Route exact path="/FunPage" component={FunPage}/>
-
       </Switch>
     </Router>
   );
