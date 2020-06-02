@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Contact";
 import ViewJobs from './pages/ViewJobs/ViewJobs';
 import AddJobs from './pages/AddJob/AddJob';
 import { useAuth0 } from "./react-auth0-spa";
+import 'materialize-css/dist/css/materialize.min.css';
 
 function App() {
   const { loading } = useAuth0();
