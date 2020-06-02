@@ -5,20 +5,6 @@ import {Link} from "react-router-dom";
 
 
 const Navbar = (props) => {
-<<<<<<< HEAD
-    return (
-<>
-<nav>
-    <div class="nav-wrapper">
-      
-      <a href="#!" class="brand-logo">Picture It Done</a>
-      <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down" id="menuList">
-        <li><Link to={"/home"}>Home</Link></li>
-        <li><Link to={"/ViewJobs"}>View Jobs</Link></li>
-        <li><Link to={"/AddJob"}>Add a Job</Link></li>
-        <button class="btn waves-effect waves-light" type="submit" id="loginBtn" name="action">Login<i class="material-icons">send</i>
-=======
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
   
   return (
@@ -32,7 +18,6 @@ const Navbar = (props) => {
         <li><Link to={"/AddJob"} id="linkTags">Add a Job</Link></li>
         {!isAuthenticated && (
         <button className="btn waves-effect waves-light" type="submit" id="loginBtn" name="action"onClick={() => loginWithRedirect({})}>Log in<i className="material-icons">send</i>
->>>>>>> 169bb4f4f84cb6a2db404c60a841dd03f0c31212
         </button>
         )}
         {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
