@@ -1,5 +1,7 @@
 h1 {
     text-align: center;
+    padding-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -7,4 +9,24 @@ h1 {
     width: 75%;
     margin: auto;
     padding: auto;
+    box-sizing: content-box;
 }
+
+@media only screen and (max-width: 600px) {
+    .carousel {
+      height: 250px !important;
+    }
+      .carousel {
+           height: 250px !important;
+      }
+  }
+
+@media only screen and (min-width: 600px) {
+    .carousel {
+      height: 600px !important;
+    }
+      .carousel {
+           height: 600px !important;
+      }
+  }
+

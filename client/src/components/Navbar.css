@@ -1,9 +1,9 @@
 .nav-wrapper {
-    background-color: teal;
+    background-color: rgb(4, 163, 168);
     /* text-align: left; */
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 35px;
+    padding-top: 5px;
     
 }
 
@@ -12,9 +12,14 @@ nav {
 
 }
 
-nav .brand-logo {
-    font-size: 45px !important;
-    padding-left: 25px;
+nav.brand-logo {
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pidLogo {
+    position: relative !important;
+    top: -100px !important;
 }
 
 #slide-out {
@@ -25,14 +30,14 @@ nav .brand-logo {
     position: absolute;
 }
 
-
  #linkTags {
      font-size: 25px;
+     background-color: rgb(4, 163, 168);
  }
 
  #linkTags:hover {
-     font-size: 30px;
-     color: rgb(0, 255, 255);
+     font-size: 27px;
+     color: rgb(190, 255, 255);
  }
 
  #sideLinks {
