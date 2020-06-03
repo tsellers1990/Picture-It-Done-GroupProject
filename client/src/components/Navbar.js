@@ -24,7 +24,9 @@ const Navbar = (props) => {
         <li><Link to={"/ViewJobs"} id="linkTags">View Jobs</Link></li>
         <li><Link to={"/AddJob"} id="linkTags">Add a Job</Link></li>
         <li><Link to={"/FunPage"} id="linkTags">FunPage</Link></li>
-        
+        {isAuthenticated && (
+            <li><Link to="/profile" id="linkTags">Profile</Link></li>
+          )}
         {!isAuthenticated && (
         <button className="btn waves-effect waves-light" type="submit" id="loginBtn" name="action"onClick={() => loginWithRedirect({})}>Log in<i className="material-icons">send</i>
         </button>
@@ -41,6 +43,9 @@ const Navbar = (props) => {
       <li><Link to={"/ViewJobs"} id="sideLinks">View Jobs</Link></li>
       <li><Link to={"/AddJob"} id="sideLinks">Add Job</Link></li>
       <li><Link to={"/FunPage"} id="sideLinks">Fun Page</Link></li>
+      {isAuthenticated && (
+            <li><Link to="/profile" id="sideLinks">Profile</Link></li>
+          )}
       {!isAuthenticated && (
         <button className="btn waves-effect waves-light" type="submit" id="loginBtn1" name="action"onClick={() => loginWithRedirect({})}>Log in<i className="material-icons">send</i>
         </button>
