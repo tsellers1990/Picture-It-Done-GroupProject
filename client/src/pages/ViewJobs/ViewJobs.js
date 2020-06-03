@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from "react-router-dom";
-import { Container, Image } from '../../components/JobPost';
+import { Link } from "react-router-dom";
+import { Container, Image, List, ListItem } from '../../components/JobPost';
 import API from '../../utils/API';
 
 const ViewJobs = () => {
 	
-	const[job, setJobs] = useState({})
+	const[jobs, setJobs] = useState({})
 
 	useEffect(() => {
 		loadJobs()
@@ -22,11 +22,23 @@ const ViewJobs = () => {
 	
 
 	return (
-		// <Container>
-		// 	<Image />
-		// </Container>
-
-		
+		<Container fluid>
+			{jobs.length ? (
+				<List>
+					{jobs.map(job => (
+						<ListItem key={job._id}>
+							<Link to={"/jobs/" + job._id}>
+								<strong>
+									{job.title} by {job.author}
+								</strong>
+							</Link>
+						</ListItem>
+					))}
+				</List>
+			) : (
+				<h3>No results to Display</h3>
+			)}	
+		</Container>
 	)
 }
 
