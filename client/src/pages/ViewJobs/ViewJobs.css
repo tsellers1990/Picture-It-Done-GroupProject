@@ -1,0 +1,12 @@
+.img{
+    width:29%;
+   float: right;
+   margin-left: 20px;
+   height: 200px;
+
+} 
+.par{
+   width: 100%;
+    background-color: wheat;
+    margin: 10px;
+}

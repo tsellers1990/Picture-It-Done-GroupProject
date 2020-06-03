@@ -11,13 +11,18 @@ const Navbar = (props) => {
   return (
 <>
   <nav>
-    <div className="nav-wrapper">
-      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons" id="testId">menu</i></a>
-      <ul className="right hide-on-med-and-down" id="menuList">
-        <li><Link to={"/home"} id="linkTags">Home</Link></li>
-        <li><Link to={"/ViewJobs"} id="linkTags">View Jobs</Link></li>
-        <li><Link to={"/AddJob"} id="linkTags">Add a Job</Link></li>
-        <li><Link to={"/FunPage"} id="linkTags">FunPage</Link></li>
+
+
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Picture It Done</a>
+      <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" id="menuList">
+        <li><Link to={"/home"}>Home</Link></li>
+        <li><Link to={"/ViewJobs"}>View Jobs</Link></li>
+        <li><Link to={"/AddJob"}>Add a Job</Link></li>
+        <li><Link to={"/FunPage"}>Fun Page</Link></li>
+
+
 
         {!isAuthenticated && (
         <button className="btn waves-effect waves-light" type="submit" id="loginBtn" name="action"onClick={() => loginWithRedirect({})}>Log in<i className="material-icons">send</i>
