@@ -1,5 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
+
 import './ViewJobs.css';
 
 import image1 from './images/p1.jpg';
@@ -94,18 +94,7 @@ class ViewJobs extends React.Component {
   }
   
   export default ViewJobs;
-=======
 
 
-class ViewJobs extends React.Component {
-  render(){
-    return (
-      <>
-        <h1>View jobs</h1>
-      </>
-    );
-  }
-}
 
-export default ViewJobs;
->>>>>>> master
+
