@@ -28,7 +28,7 @@ const AddJobs = () => {
       .catch(err => console.log(err));
     }
   };
-
+//
   return (
     <div className="new-job-form">
       <form>
