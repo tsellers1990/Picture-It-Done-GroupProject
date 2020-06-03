@@ -6,7 +6,7 @@ const jobSchema = new Schema({
   user: { type: String, required: true },
   description: String, //look into making this required. threw an error at me but havent looked into it.
   date: { type: Date, default: Date.now },
-  image: { type: String, default: "../image/notfound.png"},
+  image: { data: Buffer, type: String,  default: "../image/notfound.png"},
   phone: { type: String },
   email: { type: String }
 });
