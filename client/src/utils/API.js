@@ -8,9 +8,9 @@ export default {
     search: function(query) {
         return axios.get(BASEURL + query + APIKEY);
       },
-    // getJobs: function() {
-    //     return axios.get("/api/jobs");
-    // },
+    getJobs: function() {
+        return axios.get("/api/jobs");
+    },
     getJob: function(id) {
         return axios.get("/api/jobs" + id);
     },
@@ -18,6 +18,7 @@ export default {
         return axios.delete("/api/jobs" + id);     
     },
     saveJob: function(jobData) {
-        return axios.post("/api/jobs" + jobData);
+        console.log(jobData)
+        return axios.post("/api/jobs" , jobData);
     }
 };
