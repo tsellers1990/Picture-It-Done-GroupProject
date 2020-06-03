@@ -1,13 +1,5 @@
 import React from "react";
 
-export function Container(props) {
-    return (
-        <div {...props}>
-            <article class="par"></article>
-        </div>
-    )
-}
-
 export function Image(props) {
     return(
         <div {...props}>
@@ -26,4 +18,25 @@ export function List({ children }) {
 
 export function ListItem({ children }) {
     return <li className="list-group-item"></li>
+}
+
+export function Container({ fluid, children }) {
+    return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
+}
+
+export function Row({ fluid, children }) {
+    return <div className={`row${fluid ? "-fluid" : ""}`}>{children}</div>;
+}
+
+export function Col({ size, children }) {
+    return (
+      <div
+        className={size
+          .split(" ")
+          .map(size => "col-" + size)
+          .join(" ")}
+      >
+        {children}
+      </div>
+    );
 }

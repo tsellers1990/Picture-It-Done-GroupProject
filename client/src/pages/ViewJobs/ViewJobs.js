@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { Container, Image, List, ListItem } from '../../components/JobPost';
+import { Container, Image, List, ListItem, Col, Row } from '../../components/JobPost';
 import API from '../../utils/API';
 
 const ViewJobs = () => {
 	
-	const[jobs, setJobs] = useState({})
+	const[jobs, setJobs] = useState([])
 
 	useEffect(() => {
 		loadJobs()
-	})
+	}, [])
 
 	function loadJobs() {
 		API.getJobs()
@@ -18,26 +18,33 @@ const ViewJobs = () => {
 			)
 			.catch(err => console.log(err));
 	}
-	
-	
 
 	return (
 		<Container fluid>
-			{jobs.length ? (
-				<List>
-					{jobs.map(job => (
-						<ListItem key={job._id}>
-							<Link to={"/jobs/" + job._id}>
-								<strong>
-									{job.title} by {job.author}
-								</strong>
-							</Link>
-						</ListItem>
-					))}
-				</List>
-			) : (
-				<h3>No results to Display</h3>
-			)}	
+			<Row>
+				<Col size="md-6 sm-12">
+					{jobs.length ? (
+						<List>
+							<h1>This is the list</h1>
+							<h1>{console.log(jobs)}</h1>
+							{jobs.map(job => (
+								<ListItem key={job._id}>
+									<Link to={"/jobs/" + job._id}>
+										<strong>
+										{job.title}
+										{job.description}
+										{job.user}
+										{job.image}
+										</strong>
+									</Link>
+								</ListItem>
+							))}
+						</List>
+					) : (
+						<h3>No results to Display</h3>
+					)}
+				</Col>
+			</Row>
 		</Container>
 	)
 }
