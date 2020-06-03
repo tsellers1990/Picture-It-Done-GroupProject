@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import data from "./data.json";
-import './App.css';
+import "./App.css";
 
 class Carousel extends Component {
   componentDidMount() {

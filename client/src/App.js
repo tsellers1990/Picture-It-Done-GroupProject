@@ -19,6 +19,7 @@ import FunPage from './pages/FunPage/FunPage';
 import AddJobs from './pages/AddJob/AddJob';
 import { useAuth0 } from "./react-auth0-spa";
 import 'materialize-css/dist/css/materialize.min.css';
+import PrivateRoute from "./components/PrivateRoute";
 
 
 function App() {
@@ -28,7 +29,6 @@ function App() {
     return <div>Loading...</div>;
   } 
   return (
-    <div className="App">
       <Router history={history}>
         <header>
           <Navbar name={"Picture It Done"}/>
@@ -40,10 +40,9 @@ function App() {
           <Route exact path="/ViewJobs" component={ViewJobs}/>
           <Route exact path="/AddJob" component={AddJobs}/>
           <Route exact path="/FunPage" component={FunPage}/>
-          <Route exact path="/Profile" component={Profile}/>
+          <PrivateRoute exact path="/Profile" component={Profile}/>
         </Switch>
       </Router>
-    </div>
   );
 }
 
