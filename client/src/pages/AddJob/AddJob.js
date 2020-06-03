@@ -21,7 +21,9 @@ const AddJobs = () => {
         user: formObject.user,
         description: formObject.description,
         date: Date.now,
-        image: formObject.image
+        image: formObject.image,
+        phone: formObject.phone,
+        email: formObject.email
       })
       .catch(err => console.log(err));
     }
@@ -41,6 +43,18 @@ const AddJobs = () => {
           onChange={handleInputChange}
           name="description"
           placeholder="Please Describe Your Problem"
+          style={{ marginTop: 10}}
+        />
+        <Input 
+          onChange={handleInputChange}
+          name="phone"
+          placeholder="Phone Number (optional)"
+          style={{ marginTop: 10}}
+        />
+        <Input 
+          onChange={handleInputChange}
+          name="email"
+          placeholder="Email (optional)"
           style={{ marginTop: 10}}
         />
         <UploadBtn /> {/* add logic here to handle the upload functionality */}
