@@ -3,9 +3,10 @@
     /* text-align: left; */
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 5px;
+    padding-top: 28px;
     
 }
+
 
 nav {
     height: 130px !important;
@@ -19,8 +20,11 @@ nav.brand-logo {
 
 .pidLogo {
     position: relative !important;
-    top: -100px !important;
+    top: -115px;
+    left: 105px;
 }
+
+
 
 #slide-out {
     background-color: rgba(0, 180, 156, 0.8) !important;

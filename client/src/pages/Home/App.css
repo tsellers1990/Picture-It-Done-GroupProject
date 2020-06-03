@@ -1,6 +1,6 @@
-h1 {
+#homeText {
     text-align: center;
-    padding-top: auto;
+    padding-top: 45px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -9,15 +9,39 @@ h1 {
     width: 75%;
     margin: auto;
     padding: auto;
+    padding-top: 0px;
     box-sizing: content-box;
 }
 
-@media only screen and (max-width: 600px) {
+.carousel {
+  width: 640px;
+  height: 360px;
+}
+#homeCarousel {
+  position: relative;
+  top: -55px;
+  height: 250px !important;
+}
+
+
+@media (min-width: 990px) {
+  #testId{display: none;}
+}
+
+@media (min-width: 650px) {
+  .brand-logo{font-size: 100%;}
+}
+
+@media (min-width: 300px) {
+  .brand-logo{font-size: 75%;}
+}
+
+/* @media only screen and (max-width: 600px) {
     .carousel {
-      height: 250px !important;
+      height: 450px !important;
     }
       .carousel {
-           height: 250px !important;
+           height: 450px !important;
       }
   }
 
@@ -28,5 +52,5 @@ h1 {
       .carousel {
            height: 600px !important;
       }
-  }
+  } */
 
