@@ -3,20 +3,23 @@
     /* text-align: left; */
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 35px;
+    padding-top: 5px;
     
 }
-
-
 
 nav {
     height: 130px !important;
 
 }
 
-nav .brand-logo {
-    font-size: 45px !important;
-    padding-left: 25px;
+nav.brand-logo {
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pidLogo {
+    position: relative !important;
+    top: -100px !important;
 }
 
 #slide-out {
@@ -26,7 +29,6 @@ nav .brand-logo {
     box-shadow: 2px 2px 4px black;
     position: absolute;
 }
-
 
  #linkTags {
      font-size: 25px;
