@@ -9,17 +9,10 @@ const Navbar = (props) => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
   
   return (
-  <>
+<>
   <nav>
     <div className="nav-wrapper">
-<<<<<<< HEAD
-=======
       <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons" id="testId">menu</i></a>
-      <div className="testContainer">
-
-      <a href="#" className="brand-logo">Picture It Done</a>
-      </div>
->>>>>>> master
       <ul className="right hide-on-med-and-down" id="menuList">
         <li><Link to={"/home"} id="linkTags">Home</Link></li>
         <li><Link to={"/ViewJobs"} id="linkTags">View Jobs</Link></li>
@@ -34,7 +27,7 @@ const Navbar = (props) => {
       </ul>
     </div>
   </nav>
-  <div className="sideContainer">
+    <div className="sideContainer">
     <ul id="slide-out" className="sidenav">
       <li><Link to={"/home"} id="sideLinks">Home</Link></li>
       <li><Link to={"/ViewJobs"} id="sideLinks">View Jobs</Link></li>
@@ -47,7 +40,11 @@ const Navbar = (props) => {
         {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
     </ul>
   </div>
-  <img className="pidLogo" src={logo} alt="Logo" />
+  <div>
+    <a href={"/home"}>
+      <img className="pidLogo" src={logo} alt="Logo" />
+    </a>
+  </div>
 </>
     )
 }
