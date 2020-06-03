@@ -18,7 +18,7 @@ const Navbar = (props) => {
 <>
   <nav>
     <div className="nav-wrapper">
-    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="slide-out" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
       <ul className="right hide-on-med-and-down" id="menuList">
         <li><Link to={"/home"} id="linkTags">Home</Link></li>
         <li><Link to={"/ViewJobs"} id="linkTags">View Jobs</Link></li>
