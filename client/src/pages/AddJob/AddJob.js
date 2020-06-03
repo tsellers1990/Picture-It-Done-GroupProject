@@ -30,6 +30,7 @@ const AddJobs = () => {
   return (
     <div className="new-job-form">
       <form>
+        {/* maybe add something to the navbar to hold the username */}
         <Input 
           onChange={handleInputChange}
           name="title"
