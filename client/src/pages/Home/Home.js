@@ -8,9 +8,11 @@ class Home extends React.Component {
   render(){
     return (
       <>
-        <div>
+        <div id="homeText">
         <h1>Find A Contractor With A Photo</h1>
-        <Carousel />
+        </div>
+        <div id="homeCarousel">
+          <Carousel />
         </div>
         <div id="container">
         <h5>Imagine those times your sink in plugged, and the plunger isn't cutting it. Your furnace has stopped working and it's 20 degrees outside - or colder! Or your backyard needs landscaping, but you don't have the time to do it yourself.</h5>
