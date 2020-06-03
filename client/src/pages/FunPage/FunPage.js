@@ -1,8 +1,9 @@
 import React from 'react';
 import SearchResultContainer from "../../components/SearchResultContainer";
+import "./FunPage.css";
 
 
-class ViewJobs extends React.Component {
+class FunPage extends React.Component {
   render(){
     return (
       //<h1>Test Job</h1>
@@ -11,4 +12,4 @@ class ViewJobs extends React.Component {
   }
 }
 
-export default ViewJobs;
+export default FunPage;
