@@ -4,8 +4,15 @@ import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
-import ViewJobs from './pages/ViewJobs/ViewJobs';
+
+// import ViewJobs from './components/proj';
+// import FunPage from './pages/FunPage/FunPage';
+//import work from './pages/Proj/Proj';
+import ViewJobs from "./pages/ViewJobs/ViewJobs";
+
+// import ViewJobs from './pages/ViewJobs/ViewJobs';
 import FunPage from './pages/FunPage/FunPage';
+
 import AddJobs from './pages/AddJob/AddJob';
 import { useAuth0 } from "./react-auth0-spa";
 import 'materialize-css/dist/css/materialize.min.css';
