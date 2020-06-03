@@ -28,7 +28,6 @@ function App() {
     return <div>Loading...</div>;
   } 
   return (
-    <div className="App">
       <Router history={history}>
         <header>
           <Navbar name={"Picture It Done"}/>
@@ -43,7 +42,6 @@ function App() {
           <Route exact path="/Profile" component={Profile}/>
         </Switch>
       </Router>
-    </div>
   );
 }
 
