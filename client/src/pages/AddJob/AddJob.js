@@ -25,6 +25,7 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
+      .then(console.log("Handleformsubmit hit"))
       .catch(err => console.log(err));
     }
   };

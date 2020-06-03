@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/index.js");
 
 module.exports = {
     findAll: function(req,res) {
@@ -15,6 +15,7 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     create: function(req,res) {
+        console.log(req.body)
         db.Job
             .create(req.body)
             .then(dbModel => res.json(dbModel))
