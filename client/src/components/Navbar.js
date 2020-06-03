@@ -18,7 +18,7 @@ const Navbar = (props) => {
         <li><Link to={"/home"}>Home</Link></li>
         <li><Link to={"/ViewJobs"}>View Jobs</Link></li>
         <li><Link to={"/AddJob"}>Add a Job</Link></li>
-        <li><Link to={"/FunPage"}>FunPage</Link></li>
+        <li><Link to={"/FunPage"}>Fun Page</Link></li>
 
 
         {!isAuthenticated && (
