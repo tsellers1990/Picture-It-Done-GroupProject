@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './ViewJobs.css';
 
 import image1 from './images/p1.jpg';

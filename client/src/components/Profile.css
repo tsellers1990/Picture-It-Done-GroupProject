@@ -1,11 +1,13 @@
 .img{
-    width:29%;
    float: right;
    margin-left: 20px;
+   margin-block-end: 20px;
    height: 200px;
+   object-fit: contain;
 
 } 
 .par{
     background-color: wheat;
-    margin: 10px;
+    margin: auto;
+    position: absolute;
 }

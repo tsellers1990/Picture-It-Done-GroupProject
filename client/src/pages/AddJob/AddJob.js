@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Input, FormBtn, UploadBtn } from '../../components/Form/index'
 import API from "../../utils/API"
+import "./AddJob.css";
 
 // find a way of getting the user ID for the API.saveJob functionality
 
