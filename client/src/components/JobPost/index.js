@@ -1,4 +1,5 @@
 import React from "react";
+// import './ViewJobs.css';
 
 export function Image(props) {
     return(
@@ -28,10 +29,10 @@ export function Brick({data}){
     console.log(data)
     return(
         <div>
-            <article className="par">
+            <article className="par" id="background" style={{width: "100%", backgroundColor: "wheat", margin: "10px"}}>
                 <h3>{data.title}</h3>
                 <p>{data.description}</p>
-                <img className="img" src={data.image} alt={`${data.user}'s image of their problem`} />
+                <img className="img" style={{width:"29%", float: "right", marginLeft: "20px", height: "200px"}} src={data.image} alt={`${data.user}'s image of their problem`} />
             </article>
         </div>
     );
