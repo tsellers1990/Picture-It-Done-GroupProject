@@ -58,7 +58,13 @@ const AddJobs = () => {
           placeholder="Email (optional)"
           style={{ marginTop: 10}}
         />
-        <UploadBtn /> {/* add logic here to handle the upload functionality */}
+        <UploadBtn value="Upload File" id="submitUpload"/> {
+          <form id="uploadForm" enctype="multipart/form-data">
+              <label for="description"></label>
+              <input type="text" name="description" placeholder="File Description" id="description" />
+              <label for="upload">Upload File:</label>
+              <input type="file" name="upload" id="upload" />
+          </form>}
         <FormBtn
           disable={!(formObject.title || formObject.description)}
           onClick={handleFormSubmit}
