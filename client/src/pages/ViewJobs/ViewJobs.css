@@ -1,11 +1,16 @@
-.img{
+#img{
     width:29%;
    float: right;
    margin-left: 20px;
    height: 200px;
 
 } 
+<<<<<<< HEAD
 .par{
+=======
+#background{
+   width: 100%;
+>>>>>>> master
     background-color: wheat;
     margin: 10px;
 }
