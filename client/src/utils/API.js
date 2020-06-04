@@ -18,7 +18,6 @@ export default {
         return axios.delete("/api/jobs" + id);     
     },
     saveJob: function(jobData) {
-        console.log(jobData)
         return axios.post("/api/jobs" , jobData);
     }
 };
