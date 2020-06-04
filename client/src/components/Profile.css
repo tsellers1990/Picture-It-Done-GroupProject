@@ -8,10 +8,13 @@
    margin-block-end: 20px;
    height: 200px;
    object-fit: contain;
-
 } 
 .par{
     background-color: wheat;
     margin: auto;
     position: absolute;
+}
+#button1 , #button2 {
+    display:inline-block;
+    /**other codes**/
 }

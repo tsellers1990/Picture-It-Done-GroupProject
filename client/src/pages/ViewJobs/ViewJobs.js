@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import './ViewJobs.css';
-
-import image1 from './images/p1.jpg';
-import image2 from './images/p2.jpg';
-import image3 from './images/p3.png';
-import image4 from './images/p4.jpg';
-import image5 from './images/p5.jpg';
-class ViewJobs extends React.Component {
-    render(){
-      return (
-        <>
-          <div>	  
-    {/* <h1>View Jobs</h1> */}
-    <article class="par">
-=======
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Image, List, ListItem, Col, Row, Brick } from '../../components/JobPost';
@@ -23,7 +6,6 @@ import API from '../../utils/API';
 const ViewJobs = () => {
 	
 	const[jobs, setJobs] = useState([])
->>>>>>> master
 
 	useEffect(() => {
 		loadJobs()
@@ -42,8 +24,7 @@ const ViewJobs = () => {
 			<Row>
 				<Col size="md-6 sm-12">
 					{jobs.length ? (
-						<List>
-							<h1>This is the list</h1>
+						<List className="jobList">
 							{jobs.map(job => {//pretty sure that it falls apart in here
 								return(
 								<ListItem key={job._id}>

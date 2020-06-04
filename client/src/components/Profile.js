@@ -31,7 +31,8 @@ const Profile = () => {
                 <li>Email-Chadwhither@yahoo.com</li>
                 <li>Phone-303-732-1168</li>
                 <li>Posted Date-6/3/2020</li>
-                <a class="waves-effect waves-light btn" id="delete-btn">Delete</a>
+                <a class="waves-effect waves-light btn" id="button1">Delete</a>
+                <a class="waves-effect waves-light btn" id="button2">Edit</a>
             </ul>
         </div>
         </div>

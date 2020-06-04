@@ -5,12 +5,12 @@
    height: 200px;
 
 } 
-<<<<<<< HEAD
-.par{
-=======
 #background{
-   width: 100%;
->>>>>>> master
     background-color: wheat;
-    margin: 10px;
+    margin: auto;
+    margin-right: 20px;
+}
+
+.list-overflow-container{
+    margin-top: 120px;
 }
