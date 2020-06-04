@@ -17,12 +17,27 @@ export function List({ children }) {
 }
 
 export function ListItem({ children }) {
-    return <li className="list-group-item"></li>
+return <li className="list-group-item">{children}</li>
 }
 
 export function Container({ fluid, children }) {
     return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
 }
+
+export function Brick({data}){
+    console.log(data)
+    return(
+        <div>
+            <article className="par">
+                <h3>{data.title}</h3>
+                <p>{data.description}</p>
+                <img className="img" src={data.image} alt={`${data.user}'s image of their problem`} />
+            </article>
+        </div>
+    );
+}
+  
+
 
 export function Row({ fluid, children }) {
     return <div className={`row${fluid ? "-fluid" : ""}`}>{children}</div>;

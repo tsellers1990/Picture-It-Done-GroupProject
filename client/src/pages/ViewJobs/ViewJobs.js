@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { Container, Image, List, ListItem, Col, Row } from '../../components/JobPost';
+import { Container, Image, List, ListItem, Col, Row, Brick } from '../../components/JobPost';
 import API from '../../utils/API';
 
 const ViewJobs = () => {
@@ -9,7 +9,7 @@ const ViewJobs = () => {
 
 	useEffect(() => {
 		loadJobs()
-	}, [])
+	}, [])// if you put something inside of this empty array, then you can make useEffect fire ONLY when that condition is met
 
 	function loadJobs() {
 		API.getJobs()
@@ -26,19 +26,13 @@ const ViewJobs = () => {
 					{jobs.length ? (
 						<List>
 							<h1>This is the list</h1>
-							<h1>{console.log(jobs)}</h1>
-							{jobs.map(job => (
+							{jobs.map(job => {//pretty sure that it falls apart in here
+								return(
 								<ListItem key={job._id}>
-									<Link to={"/jobs/" + job._id}>
-										<strong>
-										{job.title}
-										{job.description}
-										{job.user}
-										{job.image}
-										</strong>
-									</Link>
+									<Brick data={job} />
 								</ListItem>
-							))}
+								)
+							})}
 						</List>
 					) : (
 						<h3>No results to Display</h3>
