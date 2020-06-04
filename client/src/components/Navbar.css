@@ -20,8 +20,9 @@ nav.brand-logo {
 
 .pidLogo {
     position: relative !important;
-    top: -115px;
+    top: -129px;
     left: 105px;
+    height:137px;
 }
 
 .carousel .carousel-item {
