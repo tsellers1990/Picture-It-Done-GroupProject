@@ -26,6 +26,7 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
+      .then(console.log("Handleformsubmit hit"))
       .catch(err => console.log(err));
     }
   };
@@ -46,7 +47,7 @@ const AddJobs = () => {
           placeholder="Please Describe Your Problem"
           style={{ marginTop: 10}}
         />
-        <Input 
+        <Input git
           onChange={handleInputChange}
           name="phone"
           placeholder="Phone Number (optional)"

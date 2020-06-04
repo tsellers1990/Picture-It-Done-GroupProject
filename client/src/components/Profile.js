@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
-import DeleteBtn from "../components/DeleteBtn";
 import "./Profile.css";
 import image5 from './images/p5.jpg';
 
@@ -12,7 +11,7 @@ const Profile = () => {
   }
 
   return (
-    <Fragment>
+    <div className="profInfo">
       <img src={user.picture} alt="Profile" />
 
       <h2>{user.name}</h2>
@@ -35,7 +34,7 @@ const Profile = () => {
                 <a class="waves-effect waves-light btn" id="delete-btn">Delete</a>
             </ul>
         </div>
-        </Fragment>
+        </div>
 
     );
   
