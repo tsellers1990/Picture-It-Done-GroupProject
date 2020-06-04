@@ -4,17 +4,6 @@ import API from "../../utils/API"
 import "./AddJob.css";
 // find a way of getting the user ID for the API.saveJob functionality //if we have time, get it from the profile page
 
-// import S3FileUpload from 'react-s3';
-// import {keys} from "../"
-
-
-// const config = {
-//   bucketName: 'pictureitdone',
-//   dirName: 'photos', /* optional */
-//   region: 'us-west (N. California)',
-//   accessKeyId: 'keys.accessKeyId',
-//   secretAccessKey: 'keys.secretAccessKey',
-// }
 
 const AddJobs = () => {
 
