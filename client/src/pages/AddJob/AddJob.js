@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Input, FormBtn, UploadBtn } from '../../components/Form/index'
 import API from "../../utils/API"
 
-// find a way of getting the user ID for the API.saveJob functionality
+// find a way of getting the user ID for the API.saveJob functionality //if we have time, get it from the profile page
 
 const AddJobs = () => {
 
@@ -25,11 +25,15 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
-      .then(console.log("Handleformsubmit hit"))
+      .then(console.log(""))
       .catch(err => console.log(err));
     }
   };
-//
+
+  // function handleRedirect () {
+  //   return(<Redirect to ={{pathname: "/home"}} />)
+  // }
+
   return (
     <div className="new-job-form">
       <form>
