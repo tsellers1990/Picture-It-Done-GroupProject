@@ -30,6 +30,8 @@
     "prop-types": "^15.7.2",
     "react-materialize": "^3.9.2",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "aws-sdk": "^2.611.0",
+    "express-fileupload": "^1.1.6"
   }
 }
