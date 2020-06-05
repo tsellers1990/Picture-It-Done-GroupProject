@@ -142,4 +142,4 @@ res.json( {
  });
 });
 // We export the router so that the server.js file can pick it up
-module.exports = router;
+// module.exports = router;
