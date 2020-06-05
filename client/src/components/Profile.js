@@ -34,7 +34,7 @@ const Profile = () => {
                 <a class="waves-effect waves-light btn" id="button2">Edit</a>
             </ul>
         </div>
-        </div>
+    </div>
 
     );
   
