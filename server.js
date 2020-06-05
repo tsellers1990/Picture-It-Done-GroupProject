@@ -1,8 +1,8 @@
 const express = require("express");
 // const fileUpload = require("express-fileupload");
 const mongoose = require("mongoose");
-const pageRoutes = require("./routes/index.js");
-const fileRoutes = require("./routes/api/file-upload.js");
+const routes = require("./routes/index.js");
+// const fileRoutes = require("./routes/api/file-upload.js");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -17,7 +17,7 @@ app.use(express.json());
 //   // app.use(express.static("client/"));
 // }
 // Add routes, both API and view
-app.use(pageRoutes);
+app.use(routes);
 // app.use('/api/', fileRoutes);
 
 // Connect to the Mongo DB
