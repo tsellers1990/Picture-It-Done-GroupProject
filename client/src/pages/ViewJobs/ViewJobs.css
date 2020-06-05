@@ -4,6 +4,11 @@
    margin-block-end: 20px;
    height: 170px;
    background-color: rgb(253, 216, 147) !important;
+   
+}
+.paragraph{
+    margin: 20px;
+   font-weight: 400;
 }
 
 .list-overflow-container{
