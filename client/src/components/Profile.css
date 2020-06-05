@@ -4,14 +4,13 @@
 
 .img{
    float: right;
-   margin-left: 20px;
-   margin-block-end: 20px;
    height: 220px;
 } 
 .par{
     background-color: wheat;
-    margin: auto;
-    position: absolute;
+    margin: 20px;
+    position: relative;
+    height: 220px;
 }
 #button1 , #button2 {
     display:inline-block;
