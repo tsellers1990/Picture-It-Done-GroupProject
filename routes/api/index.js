@@ -1,10 +1,10 @@
 const router = require("express").Router();
 const jobRoutes = require("./jobs");
-// const apiRoutes = require("./file-upload")
+const fileRoutes = require("./file-upload")
 
 // Job routes
 router.use("/jobs", jobRoutes);
 //api routes
-// router.use("/api", apiRoutes)
+router.use("/api", fileRoutes)
 
 module.exports = router;
