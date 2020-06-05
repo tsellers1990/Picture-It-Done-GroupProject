@@ -1,12 +1,18 @@
-#img{
-    width:29%;
-   float: right;
-   margin-left: 20px;
-   height: 200px;
-
-} 
-#background{
-   width: 100%;
-    background-color: wheat;
-    margin: 10px;
+ .par{
+    /* float: end !important; */
+   margin-left: 15px;
+   margin-block-end: 20px;
+   height: 170px;
+   background-color: rgb(253, 216, 147) !important;
 }
+
+.list-overflow-container{
+    margin: 40px;
+}
+
+.img {
+    position: relative;
+    z-index: 1;
+    top: -65px;
+    
+ }
