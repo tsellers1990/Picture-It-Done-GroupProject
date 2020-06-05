@@ -1,0 +1,18 @@
+.profInfo{
+    margin-top: 120px;
+}
+
+.img{
+   float: right;
+   height: 220px;
+} 
+.par{
+    background-color: wheat;
+    margin: 20px;
+    position: relative;
+    height: 220px;
+}
+#button1 , #button2 {
+    display:inline-block;
+    /**other codes**/
+}
