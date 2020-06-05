@@ -50,7 +50,7 @@ const Navbar = (props) => {
         <button className="btn waves-effect waves-light" type="submit" id="loginBtn1" name="action"onClick={() => loginWithRedirect({})}>Log in<i className="material-icons">send</i>
         </button>
         )}
-        {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+        {isAuthenticated && <button id="loginBtn1" onClick={() => logout()}>Log out</button>}
     </ul>
   </div>
   </nav>

@@ -21,7 +21,7 @@ const ViewJobs = () => {
 
 	return (
 		<Container fluid>
-			<Row>
+			<Row id="jobView">
 				<Col size="md-6 sm-12">
 					{jobs.length ? (
 						<List>
