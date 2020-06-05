@@ -66,8 +66,8 @@ const AddJobs = () => {
         <UploadBtn value="Upload File" id="submitUpload"/> {
           <form id="uploadForm" enctype="multipart/form-data">
               <label for="description"></label>
-              <input type="text" name="description" placeholder="File Description" id="description" />
-              <label for="upload">Upload File:</label>
+              <input type="text" name="description" placeholder="Photo Description (Image is Required)" id="description" />
+              <label for="upload">Upload Your Image:</label>
               <input type="file" name="upload" id="upload" />
           </form>}
         <FormBtn

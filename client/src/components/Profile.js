@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import "./Profile.css";
 import image5 from './images/p5.jpg';
-import JSONPretty from 'react-json-pretty';
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -20,8 +19,8 @@ const Profile = () => {
     
     
     
-        <div class="par">
-            <a href="https://images.app.goo.gl/x6zHfUhVhvYNAZpo9"><img class="img" src={image5} alt="image5" /></a>
+        <div className="par">
+            <a href="https://images.app.goo.gl/x6zHfUhVhvYNAZpo9"><img className="img" src={image5} alt="image5" /></a>
             <header>
             <h3>Flooring Installer</h3>
             </header>

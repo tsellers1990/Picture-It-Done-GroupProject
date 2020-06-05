@@ -27,7 +27,7 @@ export function Brick({data}){
     console.log(data)
     return(
        
-            <div  className="par" id="background" style={{width: "100%", backgroundColor: "wheat", margin: "10px",family:"Times,Times New Roman,serif"}}>
+            <div  className="par" id="background" style={{width: "95%", backgroundColor: "wheat", margin: "10px",family:"Times,Times New Roman,serif"}}>
                 <h4>Title:{data.title}</h4>
                 <p>Description:{data.description}</p>
                 <p>Phone Number:{data.phone}</p>

@@ -1,9 +1,9 @@
  .par{
     /* float: end !important; */
-   margin-left: 15px;
    margin-block-end: 20px;
-   height: 170px;
+   height: 220px;
    background-color: rgb(253, 216, 147) !important;
+   position: relative;
 }
 
 .list-overflow-container{
@@ -14,5 +14,5 @@
     position: relative;
     z-index: 1;
     top: -65px;
-    
+    object-fit: contain;
  }
