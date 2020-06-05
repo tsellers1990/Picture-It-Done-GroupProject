@@ -4,6 +4,7 @@ const fileRoutes = require("./file-upload")
 
 // Job routes
 router.use("/jobs", jobRoutes);
+//api routes
 router.use("/api", fileRoutes)
 
 module.exports = router;
