@@ -1,6 +1,6 @@
 const path = require("path");
 const router = require("express").Router();
-const fileRoutes = require("./api/file-upload");
+const fileRoutes = require("./api");
 
 // API Routes
 router.use("/api", fileRoutes);
