@@ -34,7 +34,6 @@ export function Brick({data}){
                 <p>Phone Number:{data.phone}</p>
                 <p>Email:{data.email}</p>
                 </article>
-
                 <img className="img" style={{width:"20%", float: "right", marginLeft: "20px", height: "150px"}} src={data.image} alt={`${data.user}'s image of their problem`} />
             
         </div>
