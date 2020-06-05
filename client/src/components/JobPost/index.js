@@ -27,7 +27,7 @@ export function Brick({data}){
     console.log(data)
     return(
        
-            <div  className="par" id="background" style={{width: "100%", backgroundColor: "wheat", margin: "10px",family:"Arial,Helvetica,serif",boxShadow:"10px 10px 10px lightGray"}}>
+            <div  className="par" id="background" style={{width: "95%", backgroundColor: "wheat", margin: "10px",family:"Arial,Helvetica,serif",boxShadow:"10px 10px 10px lightGray"}}>
                <article className="paragraph">
                 <h4>Title:{data.title}</h4>
                 <p>Description:{data.description}</p>
