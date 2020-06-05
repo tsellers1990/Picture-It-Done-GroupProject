@@ -1,13 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import { Input, FormBtn, UploadBtn } from '../../components/Form/index'
 import API from "../../utils/API"
 import "./AddJob.css";
+import { func } from 'prop-types';
+import ReactDom from 'react-dom'
+import ReactS3 from 'react-s3'
+import { keys } from '../../keys'
 // find a way of getting the user ID for the API.saveJob functionality //if we have time, get it from the profile page
 
 
 const AddJobs = () => {
 
   const [formObject, setFormObject] = useState({})
+
+//   const config = {
+//     bucketName: "bucket-for-picture-it-done-image-files",
+//     // albumName: '',
+//     region: '',
+//     accessKeyId: keys.accessKeyId,
+//     secretAccessKey: keys.secretAccessKey
+// } //fill this shit out
+
+  // function callAWS (image) {
+
+  // }
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -33,7 +49,15 @@ const AddJobs = () => {
 
   // function handleRedirect () {
   //   return(<Redirect to ={{pathname: "/home"}} />)
-  // }
+  // // }
+  // function upload(e) {
+  //   console.log(e.target.files[0]);
+  //   ReactS3.upload(e.target.files[0], config)
+  //     .then((data)=> {
+  //       console.log(data)
+  //     })
+  //     .catch(err=> {console.log(err)})
+  // } 
 
   return (
     <div className="new-job-form">
@@ -67,7 +91,7 @@ const AddJobs = () => {
           <form id="uploadForm" enctype="multipart/form-data">
               <label for="description"></label>
               <label for="upload">Choose a file for photo upload! </label>
-              <input type="file" name="upload" id="upload" />
+              <input type="file" name="upload" id="upload" onChange={console.log('placeholder')}/> 
           </form>
         <FormBtn //this is the submit button
           disable={!(formObject.title || formObject.description)}
