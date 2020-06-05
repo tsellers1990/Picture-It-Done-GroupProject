@@ -7,8 +7,7 @@ const singleUpload = upload.single('image');
 
 
 router.post('/image-upload', function(req, res) {
-
-
+    console.log("/image-upload hit")
     singleUpload(req, res, function(err) {
         return res.json({'imageUrl': req.file.location});
     });
