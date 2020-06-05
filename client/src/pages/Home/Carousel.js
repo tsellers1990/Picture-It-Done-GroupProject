@@ -18,7 +18,7 @@ class Carousel extends Component {
   renderThis = () => {
     return data.map(i => (
       <a key={i.url} className="carousel-item">
-        <img src={i.url} />
+        <img src={i.url} alt="carouselImages" />
       </a>
     ));
   };
