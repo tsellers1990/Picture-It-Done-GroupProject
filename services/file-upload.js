@@ -15,6 +15,7 @@ const upload = multer({
     storage: multerS3({
         s3: s3,
         bucket: 'picture-it-done-1',
+        // acl: 'public-read',
         metadata: function (req, file, cb) {
             cb(null, {fieldName: 'TESTING_META_DATA!'});
         },
