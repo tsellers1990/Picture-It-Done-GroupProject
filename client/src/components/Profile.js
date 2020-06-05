@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import "./Profile.css";
 import image5 from './images/p5.jpg';
+import JSONPretty from 'react-json-pretty';
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -16,7 +17,6 @@ const Profile = () => {
 
       <h2>{user.name}</h2>
       <p>{user.email}</p>
-      <code>{JSON.stringify(user, null, 2)}</code>
     
     
     

@@ -51,7 +51,7 @@ const AddJobs = () => {
           placeholder="Please Describe Your Problem"
           style={{ marginTop: 10}}
         />
-        <Input git
+        <Input
           onChange={handleInputChange}
           name="phone"
           placeholder="Phone Number (optional)"
