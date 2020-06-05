@@ -3,7 +3,15 @@
    margin-block-end: 20px;
    height: 220px;
    background-color: rgb(253, 216, 147) !important;
+<<<<<<< HEAD
    position: relative;
+=======
+   
+}
+.paragraph{
+    margin: 20px;
+   font-weight: 400;
+>>>>>>> master
 }
 
 .list-overflow-container{

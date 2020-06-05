@@ -26,7 +26,7 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
-      .then(console.log(""))
+      // .then(``) redirect this bitch
       .catch(err => console.log(err));
     }
   };
@@ -63,14 +63,17 @@ const AddJobs = () => {
           placeholder="Email (optional)"
           style={{ marginTop: 10}}
         />
-        <UploadBtn value="Upload File" id="submitUpload"/> {
-          <form id="uploadForm" enctype="multipart/form-data">
+          <form id="uploadForm" enctype="multipart/form-data"> // this is the upload file button
               <label for="description"></label>
+<<<<<<< HEAD
               <input type="text" name="description" placeholder="Photo Description (Image is Required)" id="description" />
               <label for="upload">Upload Your Image:</label>
+=======
+              <label for="upload">Upload Image:</label>
+>>>>>>> master
               <input type="file" name="upload" id="upload" />
-          </form>}
-        <FormBtn
+          </form>
+        <FormBtn /////this is the submit button
           disable={!(formObject.title || formObject.description)}
           onClick={handleFormSubmit}
         >
