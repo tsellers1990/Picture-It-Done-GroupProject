@@ -1,15 +1,7 @@
  .par{
-<<<<<<< HEAD
     height: 170px;
     background-color: rgb(255, 212, 133) !important;
     outline: 2px solid black;
-=======
-    /* float: end !important; */
-   margin-block-end: 20px;
-   height: 220px;
-   background-color: rgb(253, 216, 147) !important;
-   
->>>>>>> master
 }
 .paragraph {
     margin-left: 20px;

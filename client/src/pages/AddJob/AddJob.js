@@ -63,11 +63,7 @@ const AddJobs = () => {
           placeholder="Email (optional)"
           style={{ marginTop: 10}}
         />
-<<<<<<< HEAD
           <form id="uploadForm" enctype="multipart/form-data">
-=======
-          <form id="uploadForm" enctype="multipart/form-data"> 
->>>>>>> master
               <label for="description"></label>
               <label for="upload">Choose a file for photo upload! </label>
               <input type="file" name="upload" id="upload" />

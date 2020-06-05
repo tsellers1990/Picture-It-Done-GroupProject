@@ -1,16 +1,8 @@
 .funStuff {
-<<<<<<< HEAD
     width: 75%;
     position: relative;
     margin: auto;
     margin-top: 60px;
-=======
-    width: 90%;
-    text-align: center;
-    position: relative;
-    margin: auto;
-    margin-top: 120px;
->>>>>>> master
     font-size: 25px;
 }
 
