@@ -42,7 +42,7 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
-      // .then(``) redirect this bitch
+      // .then(``) redirect this
       .catch(err => console.log(err));
     }
   };
