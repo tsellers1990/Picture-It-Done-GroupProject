@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.8.2",
-    "aws-sdk": "^2.611.0",
+    "aws-sdk": "^2.690.0",
     "axios": "^0.18.0",
     "express": "^4.16.3",
     "express-fileupload": "^1.1.6",
@@ -30,6 +30,8 @@
     "materialize-css": "^1.0.0-rc.2",
     "moment": "^2.26.0",
     "mongoose": "^5.3.16",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
     "prop-types": "^15.7.2",
     "react-materialize": "^3.9.2",
     "react-moment": "^0.9.7",
