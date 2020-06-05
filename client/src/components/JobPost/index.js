@@ -1,6 +1,4 @@
 import React from "react";
-// import './ViewJobs.css';
-
 export function Image(props) {
     return(
         <div {...props}>
@@ -28,14 +26,16 @@ export function Container({ fluid, children }) {
 export function Brick({data}){
     console.log(data)
     return(
-        <div>
-            <article className="par" id="background" style={{width: "100%", backgroundColor: "wheat", margin: "10px"}}>
-                <h3>{data.title}</h3>
-                <p>{data.description}</p>
-                <p>{data.phone}</p>
-                <p>{data.email}</p>
-                <img className="img" style={{width:"29%", float: "right", height: "35%"}} src={data.image} alt={`${data.user}'s image of their problem`} />
-            </article>
+       
+            <div  className="par" id="background" style={{width: "100%", backgroundColor: "wheat", margin: "10px",family:"Times,Times New Roman,serif"}}>
+                <h4>Title:{data.title}</h4>
+                <p>Description:{data.description}</p>
+                <p>Phone Number:{data.phone}</p>
+                <p>Email:{data.email}</p>
+
+
+                <img className="img" style={{width:"20%", float: "right", marginLeft: "20px", height: "150px"}} src={data.image} alt={`${data.user}'s image of their problem`} />
+            
         </div>
     );
 }
