@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Input, FormBtn, UploadBtn } from '../../components/Form/index'
 import API from "../../utils/API"
-
+import "./AddJob.css";
 // find a way of getting the user ID for the API.saveJob functionality //if we have time, get it from the profile page
+
 
 const AddJobs = () => {
 
@@ -62,12 +63,12 @@ const AddJobs = () => {
           placeholder="Email (optional)"
           style={{ marginTop: 10}}
         />
-          <form id="uploadForm" enctype="multipart/form-data">
+          <form id="uploadForm" enctype="multipart/form-data"> // this is the upload file button
               <label for="description"></label>
               <label for="upload">Upload Image:</label>
               <input type="file" name="upload" id="upload" />
           </form>
-        <FormBtn
+        <FormBtn /////this is the submit button
           disable={!(formObject.title || formObject.description)}
           onClick={handleFormSubmit}
         >

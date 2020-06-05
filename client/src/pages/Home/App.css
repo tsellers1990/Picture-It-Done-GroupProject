@@ -1,6 +1,6 @@
 #homeText {
     text-align: center;
-    padding-top: 45px;
+    padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -40,7 +40,7 @@
 
 #homeCarousel {
   position: relative;
-  top: -55px;
+  top: -95px;
   height: 250px !important;
 }
 

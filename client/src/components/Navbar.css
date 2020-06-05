@@ -3,7 +3,8 @@
     /* text-align: left; */
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 28px;
+    padding-top: 32px;
+    box-shadow:10px 10px 10px rgb(163, 162, 162);
     
 }
 
@@ -20,9 +21,9 @@ nav.brand-logo {
 
 .pidLogo {
     position: relative !important;
-    top: -129px;
+    top: -120px;
     left: 105px;
-    height:137px;
+    height:140px;
 }
 
 .carousel .carousel-item {
@@ -73,7 +74,9 @@ width:300px !important;}
     background-color: rgb(16, 219, 219);
     color: black;
     font-size: 18px;
-    padding-top: 5px;
+    padding-top: 4px;
+    margin-left: 35px;
+    margin-top: 25px;
 }
 
 #loginBtn:hover {
