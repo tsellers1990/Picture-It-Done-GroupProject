@@ -25,7 +25,7 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
-      .then(console.log(""))
+      // .then(``) redirect this bitch
       .catch(err => console.log(err));
     }
   };

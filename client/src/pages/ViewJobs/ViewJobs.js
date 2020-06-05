@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Image, List, ListItem, Col, Row, Brick } from '../../components/JobPost';
 import API from '../../utils/API';
+import { withRouter } from 'react-router'
 
 const ViewJobs = () => {
 	
