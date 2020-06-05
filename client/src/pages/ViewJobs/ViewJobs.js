@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Image, List, ListItem, Col, Row, Brick } from '../../components/JobPost';
 import API from '../../utils/API';
+import "./ViewJobs.css"
 
 const ViewJobs = () => {
 	
@@ -21,7 +22,7 @@ const ViewJobs = () => {
 
 	return (
 		<Container fluid>
-			<Row>
+			<Row id="jobView">
 				<Col size="md-6 sm-12">
 					{jobs.length ? (
 						<List>
