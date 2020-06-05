@@ -1,22 +1,18 @@
  .par{
-    /* float: end !important; */
-   margin-left: 15px;
-   margin-block-end: 20px;
-   height: 170px;
-   background-color: rgb(253, 216, 147) !important;
-   
+    height: 170px;
+    background-color: rgb(255, 212, 133) !important;
+    outline: 2px solid black;
 }
-.paragraph{
-    margin: 20px;
-   font-weight: 400;
+.paragraph {
+    margin-left: 20px;
 }
 
 .list-overflow-container{
-    margin: 40px;
+    margin: 60px;
 }
 
 .img {
     position: relative;
     z-index: 1;
-    top: -65px;
+    top: -75px;
  }

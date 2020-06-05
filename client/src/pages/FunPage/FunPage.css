@@ -1,7 +1,17 @@
 .funStuff {
-    width: 120%;
-    text-align: center;
+    width: 75%;
     position: relative;
     margin: auto;
+    margin-top: 60px;
     font-size: 25px;
+}
+
+.list-group-item {
+    position: relative;
+    padding-top: 0px;
+}
+
+.img-fluid {
+    margin: 15px;
+
 }
