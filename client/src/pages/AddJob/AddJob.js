@@ -14,6 +14,10 @@ const AddJobs = () => {
     setFormObject({...formObject, [name]: value})
   };
 
+  // function awsPost() {
+  //   handleUpload = (ev)
+  // } //this isnt working bc of jquery
+
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.description) {
@@ -26,7 +30,7 @@ const AddJobs = () => {
         phone: formObject.phone,
         email: formObject.email
       })
-      // .then(``) redirect this bitch
+      // .then(awsPost)
       .catch(err => console.log(err));
     }
   };
