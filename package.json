@@ -23,6 +23,7 @@
     "@auth0/auth0-spa-js": "^1.8.2",
     "aws-sdk": "^2.611.0",
     "axios": "^0.18.0",
+    "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "express-fileupload": "^1.1.6",
     "fs": "0.0.1-security",

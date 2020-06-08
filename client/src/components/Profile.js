@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import "./Profile.css";
-import image5 from './images/p5.jpg';
+// import image5 from './images/p5.jpg';
 
 const Profile = () => {
   const { loading, user } = useAuth0();
